@@ -16,5 +16,9 @@ mini-gmp: ./third-party/gmp-6.3.0/mini-gmp/mini-gmp.h ./third-party/gmp-6.3.0//m
 main: ./app/src/main.c
 	$(CC) $(CFLAGS)  -L./third-party/gmp-6.3.0/mini-gmp -l:mini-gmp.a -c ./app/src/main.c -o ./main -static
 
+mini-gmp-emscripten:
+	
+
+
 clean:
 	rm -f ../main
